@@ -5,7 +5,7 @@ class Save{
 
     guardar(){
 
-
+        const fs = require('fs');
         // convert JSON object to string
         const data = JSON.stringify(mapa);
         console.log(data);
