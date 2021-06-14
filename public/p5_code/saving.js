@@ -9,8 +9,13 @@ class Save{
         // convert JSON object to string
         const data = JSON.stringify(mapa);
         console.log(data);
-        // write JSON string to a file
-        document.write(data);
+        fs.writeFile('save.json', data, err => {
+            if (err) {
+              console.error(err);
+              return;
+            }
+            console.log("Json guardado");
+          })
     }
 
     cargar(){
