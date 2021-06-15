@@ -8,7 +8,7 @@ class Casilla{
     }
 
     draw(){
-        circle(this.x*res,this.y*res,res/2);
+        circle(this.x*res,this.y*res,res/2);        
     }
     
     movimientosValidos(){
