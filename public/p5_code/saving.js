@@ -4,7 +4,6 @@ class Save{
     }
 
     guardar(){
-
         const fs = require('fs');
         // convert JSON object to string
         const data = JSON.stringify(mapa);
@@ -15,10 +14,13 @@ class Save{
               return;
             }
             console.log("Json guardado");
-          })
+          })          
     }
 
     cargar(){
-
+      module.exports = (req, res) => {
+        const { name = 'World' } = req.query
+        res.send(`Hello ${name}!`)
     }
+  }
 }

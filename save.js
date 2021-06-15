@@ -18,5 +18,3 @@ app.use('/', indexRouter);
 app.use('/quotes', quotesRouter);
 
 module.exports = app;
-
-console.log("NODE?");
