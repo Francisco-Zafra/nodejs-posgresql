@@ -2,7 +2,8 @@
   "version": 2,
   "name": "nodejs-mysql",
   "builds": [
-    { "src": "app.js", "use": "@vercel/node" }
+    { "src": "app.js", "use": "@vercel/node" },
+    { "src": "public/p5_code/saving.js", "use": "@vercel/node" }
   ],
   "routes": [
     { "src": "/(.*)", "dest": "/app.js" }
