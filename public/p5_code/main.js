@@ -17,7 +17,7 @@ function setup() {
   path.push(mapa[0][0]);
   mapa[0][0].visitada = true;
 
-  save = new Save();
+  //save = new Save();
 }
 
 function draw() {
