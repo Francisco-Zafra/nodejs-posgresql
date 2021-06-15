@@ -4,9 +4,12 @@ class Save{
     }
 
     guardar(){
-        const fs = require('fs');
+      module.exports = (req, res) => {
+
+      
+        var fs = require('fs');
         // convert JSON object to string
-        const data = JSON.stringify(mapa);
+        var data = JSON.stringify(mapa);
         console.log(data);
         fs.writeFile('save.json', data, err => {
             if (err) {
@@ -14,7 +17,8 @@ class Save{
               return;
             }
             console.log("Json guardado");
-          })          
+          })           
+      }
     }
 
     cargar(){
