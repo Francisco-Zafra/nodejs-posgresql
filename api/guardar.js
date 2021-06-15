@@ -3,7 +3,7 @@ var fs = require('fs');
 const data = JSON.stringify("mapa");
 // write JSON string to a file
 
-fs.writeFile('mapa.json', data, err => {
+fs.writeFile('/public/mapa.json', data, err => {
     if (err) {
     console.error(err);
     return; 
