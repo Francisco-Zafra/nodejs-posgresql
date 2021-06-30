@@ -1,5 +1,13 @@
 var express = require('express');
 var router = express.Router();
+const http = require('http');
+var fs = require('fs');
+var express = require('express');
+var bodyParser = require('body-parser');
+const { nextTick } = require('process');
+
+app.use(bodyParser.json({limit: '200mb'}));
+app.use(bodyParser.urlencoded({limit: '200mb', extended: true}));
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
