@@ -4,9 +4,6 @@ var express = require('express');
 var bodyParser = require('body-parser');
 const { nextTick } = require('process');
 
-const hostname = '127.0.0.1';
-const port = 3000;
-
 var app = express();
 
 app.use(express.static('p5_code'));
