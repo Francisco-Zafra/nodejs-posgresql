@@ -1,24 +1,25 @@
-html, body {
-    height: 100%;
-    background-color:#939393;
-  }
+html,
+body {
+  height: 100%;
+  background-color: #939393;
+}
 
-  body {
-    margin: 0;
-    display: flex;
-  
-    /* This centers our sketch horizontally. */
-    justify-content: center;
-  
-    /* This centers our sketch vertically. */
-    align-items: center;
-  }
-  
+body {
+  margin: 0;
+  display: flex;
 
-  .barras{
-        /* This centers our sketch horizontally. */
-        justify-content: center;
-  
-        /* This centers our sketch vertically. */
-        align-items: stretch;
-  }
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
+}
+
+
+.barras {
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: stretch;
+}
