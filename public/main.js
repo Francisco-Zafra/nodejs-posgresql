@@ -144,7 +144,6 @@ function horaLateral(){
   var months = days * 30.416666666666668;
   var years = months * 12;
 
-  console.log(tiempoPasado);
   //calculo 
   var anos = Math.floor(tiempoPasado / years);
 
