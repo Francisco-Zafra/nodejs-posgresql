@@ -1,22 +1,16 @@
+const http = require('http');
+var fs = require('fs');
 var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+var bodyParser = require('body-parser');
+const { nextTick } = require('process');
 
-var indexRouter = require('./routes/index');
-var quotesRouter = require('./routes/quotes');
+const hostname = '127.0.0.1';
+const port = 3000;
 
 var app = express();
 
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
-
-app.use('/', indexRouter);
-app.use('/quotes', quotesRouter);
-
+app.use(express.static('p5_code'));
+app.use(express.static('public'));
 app.use(bodyParser.json({limit: '200mb'}));
 app.use(bodyParser.urlencoded({limit: '200mb', extended: true}));
 
@@ -75,4 +69,6 @@ app.get('/cargar2', function(req, res) {
   return
 });
 
-module.exports = app;
+app.listen(3000, function() {
+  console.log('Self Avoiding Walk, escuchando el puerto 3000!');
+});
